@@ -5,7 +5,7 @@ document.getElementById('professorSearchForm').addEventListener('submit', functi
     const professorName = document.getElementById('professorName').value.trim();
 
     if (professorName) {
-        const searchResultsUrl = 'your_search_results_page.html?professor=' + encodeURIComponent(professorName);
+        const searchResultsUrl = 'results.html?professor=' + encodeURIComponent(professorName);
         window.location.href = searchResultsUrl;
     } else {
         // Display an error message or take appropriate action
