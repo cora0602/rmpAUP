@@ -29,7 +29,8 @@ app.get('/', (req, res) => {
   
 
 // Search for professors
-app.get('/professor', async(req, res) => {
+app.get('/search', async(req, res) => {
+    
     try {
         const result = await database.query('SELECT * FROM professors');
         res.json(result.rows);
